@@ -1,12 +1,12 @@
 from django.db import models
 
 
-class Stock(model.Model):
+class Stock(models.Model):
     """
     Model for storing stocks and their current price.
     """
 
-    id = models.CharField(max_length=20)
+    id = models.CharField(max_length=20, primary_key=True, unique=True)
     name = models.CharField(max_length=20)
     price = models.FloatField()
     

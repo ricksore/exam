@@ -43,9 +43,11 @@ INSTALLED_APPS = [
 
     'api.apps.ApiConfig',
     'stocks.apps.StocksConfig',
-    'orders.apps.OrderConfig',
+    'orders.apps.OrdersConfig',
 
     'rest_framework',
+    'rest_framework_simplejwt',
+
 ]
 
 MIDDLEWARE = [
@@ -130,6 +132,9 @@ STATIC_URL = '/static/'
 
 
 REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ],
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
     )

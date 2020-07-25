@@ -1,10 +1,10 @@
 from rest_framework import routers
 
-from .views import OrderViewSet
+from .views import StockViewSet
 
 
 router = routers.SimpleRouter()
 
-router.register('orders', OrderViewSet)
+router.register('stocks', StockViewSet)
 
 urlpatterns = router.urls

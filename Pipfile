@@ -9,6 +9,8 @@ verify_ssl = true
 django = "*"
 djangorestframework = "*"
 python-dotenv = "*"
+djangorestframework-simplejwt = "*"
+django-url-filter = "*"
 
 [requires]
 python_version = "3.8"
