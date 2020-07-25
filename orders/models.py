@@ -22,11 +22,3 @@ class Order(models.Model):
 
     def __str__(self):
         return f'{self.stock.name} - {self.quantity} @{self.price}'
-
-    @property
-    def total_price(self):
-        """
-        Returns the multiple of price and quantity.
-        """
-
-        return self.price * self.quantity
