@@ -1,4 +1,4 @@
-1. Create a .env file containing the ff variables:
+1. Create an .env file containing the ff variables:
     SECRET_KEY
     ALLOWED_HOSTS
     IS_DEBUG
